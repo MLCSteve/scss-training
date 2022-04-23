@@ -1,0 +1,23 @@
+.todo-footer {
+  padding: $m-space;
+  display: flex;
+
+  input {
+    flex-grow: 1;
+    padding-left: $m-space;
+    margin-right: $m-space;
+  }
+
+  button {
+    background-color: #ffffff;
+    border: 1px solid $light-blue;
+    color: #007bff;
+
+    &:hover,
+    &:focus {
+      background-color: $light-blue;
+      color: #ffffff;
+      border-color: #ffffff;
+    }
+  }
+}

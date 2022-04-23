@@ -1,0 +1,40 @@
+/* Footer Styles */
+
+footer {
+  font-family: 'Oswald', sans-serif;
+  border-top: 1px solid #c7c7c7;
+  font-weight: bold;
+}
+
+.footer-widgets {
+  padding: 40px 0;
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  .contact-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+     max-width: 50%;
+
+    .footer-image {
+      max-width:100%;
+    }
+  }
+}
+
+
+
+.copyright {
+  border-top: 1px solid #c7c7c7;
+  text-align: center;
+  color: #885345;
+  padding: 15px;
+}
