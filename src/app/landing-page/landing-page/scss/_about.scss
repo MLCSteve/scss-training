@@ -11,13 +11,13 @@
 
 .about-us-text {
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 40px 0;
+  padding: $l-size 0;
 }
 
 .about-us-text p {
-  max-width: 960px;
+  max-width: $container;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: $l-size 0;
   text-align: justify;
   font-weight: normal;
 }

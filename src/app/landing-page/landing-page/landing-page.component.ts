@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class LandingPageComponent implements OnInit {
 
   imageSrc = 'assets/images/bakery'
-  constructor() { }
+  constructor() {
+    document.body.style.backgroundColor = '#ffffff'
+  }
 
   ngOnInit(): void {
   }

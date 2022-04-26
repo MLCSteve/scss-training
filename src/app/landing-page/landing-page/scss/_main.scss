@@ -14,14 +14,14 @@ main .header-title {
   background-color: rgba(0, 0, 0, 0.3);
   color: #FFF;
   padding-top: 150px;
-}
 
-main .header-title h1 {
-  font-size: 40px;
-  font-weight: normal;
-}
+  h1 {
+    font-size: $l-size;
+    font-weight: normal;
+  }
 
-main .header-title h2 {
-  font-size: 24px;
-  font-weight: normal;
+  h2 {
+    font-size: 24px;
+    font-weight: normal;
+  }
 }

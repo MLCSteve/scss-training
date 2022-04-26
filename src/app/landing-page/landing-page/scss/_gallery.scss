@@ -1,15 +1,13 @@
 /* Gallery Section */
 
 .gallery {
-  max-width: 960px;
+  max-width: $container;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: $l-size 0;
 
   .swirl {
     max-width: 420px;
-    margin: 0 auto;
-    float: none;
-    display: block;
+    @include center-block;
 
     &:upside-down {
       transform: rotate(180deg);
@@ -17,9 +15,13 @@
   }
 
   .gallery-grid {
-    padding: 40px 0;
+    padding: $l-size 0;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+
+    img {
+      @include border-radius(20px 20px 20px 80px);
+    }
   }
 }

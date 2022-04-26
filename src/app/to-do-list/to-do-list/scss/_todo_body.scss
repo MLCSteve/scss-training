@@ -7,22 +7,15 @@
     list-style-type: none;
 
     li {
+      // padding: addition(8px, 12px);
+      // padding: addition($m-space, 12px);
       padding: $m-space;
       display: flex;
       align-items: center;
       justify-content: space-between;
 
-      button {
-        background-color: #ffffff;
-        border: 1px solid $warning-red;
-        color: $warning-red;
-
-        &:hover,
-        &:focus {
-          background-color: $warning-red;
-          color: #ffffff;
-          border-color: #ffffff;
-        }
+      &:hover {
+        background-color: darken(#ffffff, 5%)
       }
     }
   }

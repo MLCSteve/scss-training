@@ -1,0 +1,33 @@
+.btn {
+  min-width: 100px;
+  padding: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 1px solid #8f8f90;
+  @include border-radius(5px);
+}
+
+@mixin button-style($color) {
+  @extend .btn;
+  border-color: ($color);
+  color: ($color);
+
+  &:hover,
+  &:focus {
+    background-color: ($color);
+    color: #ffffff;
+  }
+}
+
+.btn-warning {
+  @include button-style($warning-red);
+}
+
+.btn-primary {
+  @include button-style($dark-blue);
+}
+
+.btn-message {
+  @include button-style($company-blue);
+}

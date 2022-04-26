@@ -1,16 +1,16 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
 
-@import "./variables";
+@import "./settings";
 
 .bakery-body {
   background-color: #ffffff;
 
   &:header {
-    max-width: 960px;
+    max-width: $container;
     width: 100%;
     margin: 0 auto;
   }
@@ -22,4 +22,10 @@
   &:img {
     max-width: 100%;
   }
+}
+
+.app-div {
+  height: 100%;
+  width: 100%;
+  background-color: red;
 }

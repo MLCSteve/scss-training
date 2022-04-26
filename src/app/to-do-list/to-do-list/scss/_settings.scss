@@ -1,7 +1,7 @@
 // colors
-
-$light-blue: #007bff;
 $company-blue: #128fc2;
+$light-blue: lighten($company-blue,5%);
+$dark-blue: darken($company-blue,5%);
 $warning-red: #dc3545;
 
 
@@ -11,3 +11,17 @@ $m-space: 12px;
 //fonts
 $helvetica: Helvetica Neue,Helvetica,Arial,sans-serif;
 $rockwell: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;
+
+// Mixins
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// functions
+
+@function addition($main-value, $secondary-value) {
+  @return $main-value + $secondary-value;
+}
